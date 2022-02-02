@@ -59,7 +59,7 @@ UPDATE building
 
 #### Encode UBID using PostGIS
 
-Suppose that there exists a database table of buildings ("building"), with columns for the building's ID ("id") and the building's footprint geometry ("the_geom").
+Suppose that there exists a database table of buildings ("building"), with columns for the building's ID ("id") and the building's footprint geometry ("footprint").
 
 ```sql
 CREATE TABLE building (
