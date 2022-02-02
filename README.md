@@ -12,14 +12,14 @@ Website: https://buildingid.pnnl.gov/
 ### Install
 
 1. Execute https://github.com/google/open-location-code/blob/main/plpgsql/pluscode_functions.sql
-2. Execute [buildingid_functions.sql](https://github.com/pnnl/buildingid-plpgsql/blob/main/buildingid_functions.sql)
-3. Execute [buildingid_postgis_functions.sql](https://github.com/pnnl/buildingid-plpgsql/blob/main/buildingid_postgis_functions.sql) (optional)
+2. Execute [buildingid_functions.sql](https://github.com/pnnl/buildingid-plpgsql/blob/master/buildingid_functions.sql)
+3. Execute [buildingid_postgis_functions.sql](https://github.com/pnnl/buildingid-plpgsql/blob/master/buildingid_postgis_functions.sql) (optional)
 
 ## Usage
 
 ### API
 
-[buildingid_functions.sql](https://github.com/pnnl/buildingid-plpgsql/blob/main/buildingid_functions.sql) defines the following PL/pgSQL functions:
+[buildingid_functions.sql](https://github.com/pnnl/buildingid-plpgsql/blob/master/buildingid_functions.sql) defines the following PL/pgSQL functions:
 * `UBID_Encode(numeric, numeric, numeric, numeric, numeric, numeric[, integer])` &rarr; `text`
 * `UBID_EncodeCentroid(numeric, numeric[, integer])` &rarr; `text`
 * `UBID_Decode(text)` &rarr; `record`
@@ -27,7 +27,7 @@ Website: https://buildingid.pnnl.gov/
 * `UBID_CodeArea(numeric, numeric, numeric, numeric, numeric, numeric, numeric, numeric, integer)` &rarr; `record`
 * `UBID_CodeArea_Jaccard(record, record)` &rarr; `numeric`
 
-[buildingid_postgis_functions.sql](https://github.com/pnnl/buildingid-plpgsql/blob/main/buildingid_postgis_functions.sql), which requires PostGIS, defines the following PL/pgSQL functions:
+[buildingid_postgis_functions.sql](https://github.com/pnnl/buildingid-plpgsql/blob/master/buildingid_postgis_functions.sql), which requires PostGIS, defines the following PL/pgSQL functions:
 * `UBID_EncodeGeom(geometry[, integer])` &rarr; `text`
 * `UBID_DecodeGeom(text)` &rarr; `record`
 
